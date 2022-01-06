@@ -1,5 +1,8 @@
 import {test} from './Components/test.js';
 
+console.log(test());
+
+
 PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
 
 const Application = PIXI.Application;
