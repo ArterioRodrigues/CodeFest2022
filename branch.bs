@@ -1,7 +1,0 @@
-#!/bin/bash
-
-read -p "Enter your branch name: " branch
-
-git checkout -b "$branch"
-
-git push -u origin "$branch"
