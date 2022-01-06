@@ -1,3 +1,5 @@
+import {test} from './Components/test.js';
+
 PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
 
 const Application = PIXI.Application;
@@ -14,37 +16,11 @@ app.renderer.view.style.position = 'absolute';
 
 document.body.appendChild(app.view);
 
-/*****************************************************************/
 
 const mapTexture = PIXI.Texture.from('./images/map.png');
 const mapSprite = new PIXI.Sprite(mapTexture);
 mapSprite.scale.set(5,5);
 app.stage.addChild(mapSprite);
-
-/*****************************************************************
-const Graphics = PIXI.Graphics;
-const rect = new Graphics();
-rect.beginFill(mapTexture)
-    .drawRect(200,200,100,120)
-    .endFill();
-
-mapSprite.mask = rect;
-
-app.stage.addChild(mapSprite);
-
-const groundTexture = PIXI.Texture.from('./images/enviroment/ground.jpeg');
-const groundSprite = new PIXI.TilingSprite(groundTexture,app.screen.width, app.screen.height/4);
-
-groundSprite.tileScale.set(0.4,0.4);
-groundSprite.position.set(0, app.screen.height - app.screen.height/4)
-
-const cloudTexture = PIXI.Texture.from('./images/enviroment/clouds.png');
-const cloudSprite = new PIXI.TilingSprite(cloudTexture, app.screen.width, app.screen.height);
-
-app.stage.addChild(cloudSprite);
-app.stage.addChild(groundSprite);
-
-/*****************************************************************/
 
 let character;
 let characterSheet = [];

@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@pixi/graphics-extras": "^6.2.1",
-    "pixi.js": "^6.2.1"
+    "pixi.js": "^6.2.1",
+    "type": "module"
   }
 }
