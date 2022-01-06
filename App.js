@@ -51,7 +51,6 @@ loader.add('still', './images/still_animation/still.json')
 function setup(loader, resources) {
     createCharacterSheet();
     createCharacter();
-    createEnemy();
     app.ticker.add(gameloop);
 }
 
@@ -86,17 +85,6 @@ function createCharacter(){
     app.stage.addChild(character);
 }
 
-function createEnemy(){
-    enemy = new PIXI.AnimatedSprite(characterSheet['still']);
-    enemy.anchor.set(0.5);
-    enemy.animationSpeed = 0.03;
-
-    enemy.x = app.view.width / 2 + 300;
-    enemy.y = app.view.height/ 2;
-    enemy.scale.set(5,5);
-    enemy.play();
-    app.stage.addChild(enemy);
-}
 
 function gameloop() {
     if(keys['87']) 
