@@ -1,18 +1,5 @@
 {
-  "name": "pixijs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@pixi/graphics-extras": "^6.2.1",
-    "pixi.js": "^6.2.1",
-    "type": "module"
+    "pixi.js": "^6.2.1"
   }
 }

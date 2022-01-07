@@ -119,9 +119,6 @@ function gameloop() {
             character.play();
         }
     }
-    if(collision(character,enemy)){
-        speed = 0;
-    }
 }
 
 function collision(a, b){
